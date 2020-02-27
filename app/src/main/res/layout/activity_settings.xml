@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cybercoupons.android.sdk.examples.SettingsActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_storeID"
+        android:layout_weight="0.05"
+        android:layout_toEndOf="@+id/button"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_storePassword"
+        android:layout_weight="0.05"
+        android:layout_gravity="center_horizontal"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:inputType="textPassword|textCapCharacters"
+        android:textAllCaps="true"
+        android:password="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/button"
+        android:layout_weight="0.05"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_below="@+id/timeoutText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set StoreID And Password"
+        android:id="@+id/button2"
+        android:layout_weight="0.05"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Store ID"
+        android:id="@+id/textView3"
+        android:layout_toEndOf="@+id/button"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Store Password"
+        android:id="@+id/textView4"
+        android:layout_toEndOf="@+id/button"
+        android:layout_below="@+id/txt_storeID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Transaction Completed Timeout"
+        android:id="@+id/textView2"
+        android:layout_toEndOf="@+id/button"
+        android:layout_below="@+id/txt_storePassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeoutText"
+        android:layout_weight="0.05"
+        android:layout_gravity="center_horizontal"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:text="0"
+        android:inputType="number"
+        android:visibility="invisible"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Transaction Timeout"
+        android:id="@+id/timeoutCheckbox"
+        android:layout_alignBottom="@+id/timeoutText"
+        android:layout_toRightOf="@+id/textView2"
+        android:checked="true"
+        android:inputType="number"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hide Punch Offer UI"
+        android:id="@+id/checkBox1"
+        android:layout_alignBottom="@+id/timeoutText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hide Gift Card UI"
+        android:id="@+id/checkBox2"
+        android:layout_toEndOf="@+id/checkBox1"
+        android:layout_alignTop="@+id/timeoutCheckbox"
+        android:layout_toRightOf="@+id/checkBox1"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allow Full Quick Scan"
+        android:id="@+id/checkBox3"
+        android:layout_alignBottom="@+id/timeoutText"
+        android:layout_toRightOf="@+id/checkBox2"
+        android:layout_toEndOf="@+id/checkBox2"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allow Partial Quick Scan"
+        android:id="@+id/checkBox4"
+        android:layout_toEndOf="@+id/checkBox3"
+        android:layout_alignTop="@+id/timeoutCheckbox"
+        android:layout_toRightOf="@+id/checkBox3"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Clover Merchant Key"
+        android:id="@+id/button3"
+        android:layout_toEndOf="@+id/checkBox4"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textViewVersion"
+        android:layout_toEndOf="@+id/button"
+        android:layout_toStartOf="@+id/checkBox2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

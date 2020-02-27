@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".CustomTenderHandlerTestActivity"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true" >
+
+    <WebView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible"
+        android:layout_above="@+id/llFooter"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Manual Number Entry"
+        android:id="@+id/textView"
+        android:layout_marginRight="420dp"
+        android:layout_above="@+id/barcodeTxt"
+        android:layout_alignRight="@+id/webview"
+        android:layout_alignEnd="@+id/webview" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/btnSubmit"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/barcodeTxt"
+        android:layout_above="@+id/btnSubmit"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/btnCancel"
+        android:layout_below="@+id/barcodeTxt"
+        android:layout_alignLeft="@+id/barcodeTxt"
+        android:layout_alignStart="@+id/barcodeTxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Please hold card or coupon in front of camera.\n"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction Complete"
+        android:id="@+id/btnTransactionComplete"
+        android:layout_alignBottom="@+id/webview"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:textSize="20dp"
+        android:width="240dp"
+        />
+
+    <LinearLayout
+        android:id="@id/llFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel Transaction"
+            android:id="@+id/btnCancelTransaction"
+            android:layout_alignBottom="@+id/webview"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:textSize="20dp"
+            android:width="240dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
