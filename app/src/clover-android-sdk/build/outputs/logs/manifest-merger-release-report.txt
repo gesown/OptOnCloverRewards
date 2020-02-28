@@ -1,0 +1,41 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml:18:1-26:12
+INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml:18:1-26:12
+INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml:18:1-26:12
+INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml:18:1-26:12
+INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml:18:1-26:12
+INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml:18:1-26:12
+INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml:18:1-26:12
+	package
+		ADDED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml:20:11-43
+		INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml
+		INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml:22:11-36
+		INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml
+		INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml:19:11-57
+	xmlns:android
+		ADDED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml:18:11-69
+	android:versionCode
+		ADDED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml:21:11-34
+		INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml
+		INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml
+application
+ADDED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml:24:3-17
+uses-sdk
+INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml
+INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml
+INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml
+INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml
+		ADDED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml
+		INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml
+		ADDED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml
+		INJECTED from C:\src\clover-android-sdk\clover-android-sdk\src\main\AndroidManifest.xml

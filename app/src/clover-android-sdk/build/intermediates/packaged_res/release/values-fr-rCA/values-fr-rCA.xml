@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backToRegisterDescription">Retournez l\'écran vers la droite vers le commerçant</string>
+    <string name="returnToMerchant">Veuillez rendre cet appareil à un employé</string>
+    <string name="returnToMerchantFontFamily">sans-serif-light</string>
+    <string name="returnToMerchantPaymentSuccessful">Merci pour votre achat.\n Veuillez rendre cet appareil à un employé</string>
+    <string name="returnToMerchantTitle">Terminé!</string>
+    <string name="rotateInstructions">Merci pour votre achat.\nVeuillez retourner l\'écran.</string>
+    <string name="title_activity_account_chooser">Comptes Clover</string>
+</resources>

@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">OPT-IN Rewards</string>
+    <string name="v3order_test"  translatable="false">Order_V3 Test</string>
+    <string name="cashevent_test"  translatable="false">Cash Event Test</string>
+    <string name="printer_test">Printer Test</string>
+    <string name="print_test">Print Test</string>
+    <string name="receipt_registration_test">Receipt Registration Test</string>
+    <string name="authenticate_employee"  translatable="false">Authenticate Employee</string>
+    <string name="gift_card"  translatable="false">OPT-IN Rewards Gift Card</string>		
+    <string name="title_activity_barcode_scanner_test"  translatable="false">BarcodeScannerTestActivity</string>
+    <string name="hello_world"  translatable="false">Hello world!</string>
+    <string name="sdkVersion"  translatable="false">3.0.0</string>
     <string name="action_settings">Settings</string>
     <string name="inventory_test">Inventory Test</string>
     <string name="customer_test">Customer Test</string>
     <string name="order_test">Order Test</string>
-    <string name="v3order_test">Order_V3 Test</string>
     <string name="app_notification_test">App Notification Test</string>
     <string name="app_event_name">App event name</string>
     <string name="payload">Payload</string>
@@ -17,24 +25,49 @@
     <string name="custom_tender_handler_test">CustomTenderHandlerTestActivity</string>
     <string name="cannot_send_auth_failed">Cannot send app notification because authentication did not succeed.</string>
     <string name="error_while_sending">An error occurred while sending the app notification: %s</string>
-    <string name="cashevent_test">Cash Event Test</string>
-    <string name="printer_test">Printer Test</string>
-    <string name="print_test">Print Test</string>
-    <string name="receipt_registration_test">Receipt Registration Test</string>
-    <string name="authenticate_employee">Authenticate Employee</string>
-    <string name="gift_card">OPT-IN Rewards Gift Card</string>
-
-    <array name="connection_type">
+    <string name="print_task_test"  translatable="false">PrintTaskTestActivity</string>
+    <string name="print_image_footer"  translatable="false">Print Footer-Image Activity</string>
+    <string name="platform2_details_name"  translatable="false">Platform2 Details Activity</string>
+    <array name="connection_type">	
         <item>Use app service</item>
         <item>Use HTTP</item>
-    </array>
-    <array name="role">
+    </array>		
+    <array name="role">	
         <item>Employee</item>
         <item>Manager</item>
         <item>Admin</item>
-    </array>
-
-    <string name="title_activity_barcode_scanner_test">BarcodeScannerTestActivity</string>
-    <string name="hello_world">Hello world!</string>
-
-</resources>
+    </array>		
+    <string name="returnToMerchantPaymentSuccessful"  translatable="false">Thank you for your purchase. Please return this device to an employee</string>
+    <string name="returnToMerchant"  translatable="false">Please return this device to an employee</string>
+    <string name="title_activity_account_chooser"  translatable="false">Clover Accounts</string>
+    <string name="rotateInstructions"  translatable="false">Thanks for your purchase.\nPlease rotate the screen back.</string>
+    <string name="backToRegisterDescription"  translatable="false">Rotate to the right back to the merchant</string>
+    <string name="returnToMerchantTitle"  translatable="false">All Done!</string>
+    <string name="register_uri"  translatable="false">Register URI</string>
+    <string name="print_label"  translatable="false">Print</string>
+    <string name="returnToMerchantFontFamily"  translatable="false">sans-serif</string>
+    <string name="view_print"  translatable="false">View Print</string>
+    <string name="image_print"  translatable="false">Image Print</string>
+    <string name="view_print_2"  translatable="false">View Print 2</string>
+    <string name="select_a_printer_below"  translatable="false">Select a printer below :</string>
+    <string name="lockscreen_test_activity"  translatable="false">Lockscreen Test</string>
+    <string name="unlock"  translatable="false">Unlock</string>
+    <string name="lock"  translatable="false">Lock</string>
+    <string name="select_string"  translatable="false">Please select an employee below :\n(Deselect to disable)</string>
+    <string name="custom_item_test_activity"  translatable="false">Order Custom Item Test</string>
+    <string name="order_id_custom_item"  translatable="false">Order id :</string>
+    <string name="create_new_order"  translatable="false">Create new order</string>
+    <string name="item_name"  translatable="false">Item Name</string>
+    <string name="quantity_per_unit"  translatable="false">Quantity - per unit</string>
+    <string name="item_unit"  translatable="false">Item Unit</string>
+    <string name="item_price"  translatable="false">Price</string>
+    <string name="add_item_to_order"  translatable="false">Add item to order</string>
+    <string name="complete_order"  translatable="false">Complete Order</string>
+    <string name="uninstall_this_app"  translatable="false">Uninstall this app (com.clover.android.sdk.examples) from the merchant Web Dashboard or from the More Tools app on this device or another device. You will see an indication here and in the logs when the pre-uninstall intent is received.\n\nThis screen is shown for explanatory purposes only. Pre-uninstall work should be done in the background and should not have any user interaction.</string>
+    <string name="merchant_devices_v2_activity_label"  translatable="false">Merchant Devices V2 Test</string>
+    <string name="name_label"  translatable="false">Name</string>
+    <string name="model_label"  translatable="false">Model</string>
+    <string name="id_label"  translatable="false">ID</string>
+    <string name="this_device"  translatable="false">This device:</string>
+    <string name="this_device_s_serial"  translatable="false">This device\'s serial:</string>
+</resources>		

@@ -24,7 +24,7 @@ package="com.cybercoupons.rewards.android">
     <activity
         android:name="com.cybercoupons.rewards.android.MainActivity"
         android:label="OPT-IN Rewards"
-        android:taskAffinity="com.cybercoupons.rewards.android.main" >
+        android:taskAffinity="com.cybercoupons.rewards.android.main">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 

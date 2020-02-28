@@ -34,31 +34,31 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.clover.sdk.util.CloverAccount;
-import com.clover.sdk.util.CloverAuth;
-import com.clover.sdk.util.Platform;
-import com.clover.sdk.v1.BindingException;
-import com.clover.sdk.v1.ClientException;
-import com.clover.sdk.v1.ForbiddenException;
-import com.clover.sdk.v1.Intents;
-import com.clover.sdk.v1.ResultStatus;
-import com.clover.sdk.v1.ServiceConnector;
-import com.clover.sdk.v1.ServiceException;
-//import com.clover.sdk.v1.app.AppConnector;
-import com.clover.sdk.v1.merchant.MerchantConnector;
-import com.clover.sdk.v1.tender.Tender;
-import com.clover.sdk.v1.tender.TenderConnector;
-import com.clover.sdk.v3.apps.App;
-import com.clover.sdk.v3.base.TenderConstants;
-import com.clover.sdk.v3.order.Discount;
-import com.clover.sdk.v3.order.LineItem;
-import com.clover.sdk.v3.order.Order;
-import com.clover.sdk.v3.order.OrderCalc;
-import com.clover.sdk.v3.order.OrderConnector;
-import com.clover.sdk.v3.payments.LineItemPayment;
-import com.clover.sdk.v3.payments.Payment;
-import com.clover.sdk.v3.payments.ServiceChargeAmount;
-import com.clover.sdk.v3.scanner.BarcodeScanner;
+import util.CloverAccount;
+import util.CloverAuth;
+import util.Platform;
+import v1.BindingException;
+import v1.ClientException;
+import v1.ForbiddenException;
+import v1.Intents;
+import v1.ResultStatus;
+import v1.ServiceConnector;
+import v1.ServiceException;
+//import v1.app.AppConnector;
+import v1.merchant.MerchantConnector;
+import v1.tender.Tender;
+import v1.tender.TenderConnector;
+import v3.apps.App;
+import v3.base.TenderConstants;
+import v3.order.Discount;
+import v3.order.LineItem;
+import v3.order.Order;
+import v3.order.OrderCalc;
+import v3.order.OrderConnector;
+import v3.payments.LineItemPayment;
+import v3.payments.Payment;
+import v3.payments.ServiceChargeAmount;
+import v3.scanner.BarcodeScanner;
 
 import org.apache.http.util.EncodingUtils;
 
@@ -247,14 +247,14 @@ public class GiftCardActivity extends Activity implements View.OnClickListener, 
                 public void run()
                 {
                     try {
-                        //com.clover.sdk.v3.order.Order o = c_OrderConnector.getOrder(c_strOrderID);
+                        //v3.order.Order o = c_OrderConnector.getOrder(c_strOrderID);
                         //OrderCalc oc = new OrderCalc(o);
                         //long tax = oc.getTax();
                         //long subtotal = oc.getLineSubtotal(o.getLineItems());
 
                         if(mMerchantDemographics != null)
                         {
-                            c_strMerchantID = mMerchantDemographics.getMerchant().getId();
+                 //           c_strMerchantID = mMerchantDemographics.getMerchant().getId();
                         }
 
                         if(c_OrderConnector == null)
@@ -585,7 +585,7 @@ public class GiftCardActivity extends Activity implements View.OnClickListener, 
                     final WebView myWebView = (WebView) findViewById(R.id.webview);
                     myWebView.setWebChromeClient(new WebChromeClient());
                     myWebView.getSettings().setJavaScriptEnabled(true);
-                    myWebView.getSettings().setPluginsEnabled(true);
+              //      myWebView.getSettings().setPluginsEnabled(true);
                     myWebView.getSettings().setAllowFileAccess(true);
                     myWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
                     myWebView.addJavascriptInterface(new MyJavaScriptInterface(GiftCardActivity.this), "HtmlViewer");
@@ -1020,11 +1020,11 @@ public class GiftCardActivity extends Activity implements View.OnClickListener, 
 
 
             /*
-            com.clover.sdk.v3.base.Tender l_Tender;
+            v3.base.Tender l_Tender;
             c_Payment = new Payment();
             if(c_Payment != null)
             {
-                l_Tender = new com.clover.sdk.v3.base.Tender();
+                l_Tender = new v3.base.Tender();
 
                 l_Tender.setEnabled(c_Tender.getEnabled());
                 l_Tender.setId(c_Tender.getId());
@@ -1060,7 +1060,7 @@ public class GiftCardActivity extends Activity implements View.OnClickListener, 
     public void onServiceDisconnected(ServiceConnector<? extends IInterface> serviceConnector) {
     }
 
-    private void getTenders() {
+    /*private void getTenders() {
         c_TenderConnector.getTenders(new TenderConnector.TenderCallback<List<Tender>>() {
             @Override
             public void onServiceSuccess(List<Tender> result, ResultStatus status) {
@@ -1091,6 +1091,6 @@ public class GiftCardActivity extends Activity implements View.OnClickListener, 
                 //resultText.setText("Service Connection Failure");
             }
         });
-    }
+    }*/
 
 }
